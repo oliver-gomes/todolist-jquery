@@ -1,21 +1,22 @@
 //Check off specific todos by clicking
-$("li").on("click", function () {
-  $(this).toggleClass('completed')
+$("ul").on("click", 'li', function () {
+  $(this).toggleClass('completed');
 });
 
 //click on X to delete
-$('span').click(function () {
+$('ul').on('click', 'span', function () {
   $(this).parent().fadeOut(500, function () {
-    $(this).remove()
+    $(this).remove();
   })
-  event.stopPropagation()
+  event.stopPropagation();
 });
 
 $("input[type='text']").keypress(function (event) {
   if (event.which === 13) {
     //grabbing new todo text from input
     var todoText = $(this).val();
+    $(this).val("");
     //create a new li and add ul
-    $('ul').append(`<li>${todoText}</li>`);
+    $('ul').append(`<li><span>X </span>${todoText}</li>`);
   }
 })
