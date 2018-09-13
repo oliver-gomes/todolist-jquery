@@ -4,6 +4,9 @@
 
 body {
   font-family: 'Nunito Sans', sans-serif;
+  background: #74ebd5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #container {
@@ -11,6 +14,10 @@ body {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   width: 360px;
   margin: 100px auto;
+}
+
+.fa-plus {
+  float: right;
 }
 
 h1 {
@@ -59,3 +66,4 @@ li:nth-child(2n){
   color: gray;
   text-decoration: line-through;
 }
+
