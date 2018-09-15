@@ -14,7 +14,7 @@
 
 ## Instructions
 
-- Write your to do's in Add New Todo input field
+- Write your to do's in type your todo input field
 - Click on the todo to cross out the one's that are done
 - Hover over to the right end of the todo to bring out the trash icon to delete
 
